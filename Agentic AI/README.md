@@ -1,5 +1,5 @@
 # SentryAgent AI — Autonomous Debugging Agent
-**Autonomous Self-Healing Pipeline for Production Python Applications**
+**prototype Autonomous Self-Healing Pipeline for Python Applications**
 
 
 ## Overview
@@ -7,8 +7,6 @@
 SentryAgent AI is a prototype autonomous debugging system designed to detect runtime errors in Python applications, analyze failures, and generate validated code fixes using an LLM.
 
 The system implements a **closed-loop self-healing workflow**:
-
-**Execute → Detect → Analyze → Fix → Validate → Restore**
 
 Unlike simple AI-assisted coding tools, SentryAgent focuses on **controlled and verifiable code repair**, ensuring that generated fixes are tested and safe before being applied.
 SentryAgent AI transforms debugging from a *reactive, manual process* into an *autonomous, self-correcting system*.
@@ -51,7 +49,7 @@ When your application crashes:
 └─────────────────────────────────────────────────────────┘
 ```
 
-**Result:** Incidents resolved in **seconds to minutes**, with full auditability and rollback protection.
+**Result:** the system demonstrates a controlled repair workflow with rollback protection, validation, and repair traceability.
 
 ---
 
@@ -64,7 +62,7 @@ When your application crashes:
 
 ### 🔧 AI-Powered Code Synthesis
 - **GPT-4o integration** with enterprise rule enforcement (no hardcoded values, preserve existing functions, etc.)
-- **Deterministic generation** via structured prompts and validation gates
+- **Constrained generation** guided by structured prompts and validation checks
 - **Syntax validation** ensures generated code parses before any file write
 
 ### 🛡️ Safety & Rollback
@@ -99,13 +97,12 @@ The system is built on a modular, layered architecture designed for stability, s
 
 * **Validation Layer (Pytest & AST):** A multi-stage gatekeeper that performs syntax checks and runs automated test suites to ensure the fix is functionally correct before deployment.
 
-* **Safety Layer (Atomic Backup/Restore):** Protects the production codebase by creating .bak snapshots and performing automatic rollbacks if any validation stage fails.
+* **Safety Layer (Atomic Backup/Restore):** Protects the target codebase by creating .bak snapshots and performing automatic rollbacks if any validation stage fails.
 
 * **Memory Layer (JSON-based Store):** Maintains a persistent history of failures and repair strategies, enabling pattern matching to avoid redundant or ineffective fix attempts.
 
 
 <img width="5000" height="7000" alt="System Sequence Diagram" src="https://github.com/user-attachments/assets/917188bc-5da8-4d5c-9919-f148679db1ea" />
-Click on the image for full size
 
 ---
 
@@ -122,7 +119,6 @@ Click on the image for full size
 
 
 <img width="4000" height="300" width="1000" alt="Statistical Test Selection-2026-04-17-170623" src="https://github.com/user-attachments/assets/ff1d8351-75ee-46cb-9b11-cce21733ba89" />
-Click on the image for full size
 
 ---
 
@@ -135,9 +131,7 @@ The SentryAgent AI includes a high-level command center built with Streamlit, de
 
 * **Integrated Log Streaming:** Access the chronological history of system errors and agent decisions without leaving the dashboard.
 
-* **Fix Analytics:** Review historical data from fix_memory.json to analyze recovery success rates and recurring patterns.
-
-* **Mentor Mode (Guardian Logic):** A specialized mode designed to prevent accidental production changes and support junior developers. In this mode, the agent acts as a "Senior Reviewer" explaining its reasoning before any code is applied and requiring explicit human sign-off for critical symbols.
+* **Mentor Mode (Guardian Logic):** A specialized mode designed to prevent accidental changes and support junior developers. In this mode, the agent acts as a "Senior Reviewer" explaining its reasoning before any code is applied and requiring explicit human sign-off for critical symbols.
 
 
 Dashboard Overview: <img width="1699" height="837" alt="Dashboard_1" src="https://github.com/user-attachments/assets/bbceb66d-8b85-4c4a-8e66-066a39687ed9" />
