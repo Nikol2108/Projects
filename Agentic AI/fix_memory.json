@@ -1,0 +1,74 @@
+[
+  {
+    "timestamp": "2026-04-12T14:17:47.958976",
+    "error_type": "TestFailure",
+    "error_message": "Application runs successfully, but tests are failing.",
+    "target_file": "app.py",
+    "attempt": 1,
+    "fix_summary": "Generated fix failed tests and backup was restored.",
+    "tests_passed": false,
+    "validation_issues": [
+      "============================= test session starts ==============================\ncollecting ... collected 4 items\n\ntest_app.py::test_calculate_total_price_with_valid_numbers PASSED        [ 25%]\ntest_app.py::test_calculate_total_price_with_mixed_types FAILED          [ 50%]\ntest_app.py::test_calculate_total_price_with_no_prices PASSED            [ 75%]\ntest_app.py::test_calculate_total_price_with_non_numeric PASSED          [100%]\n\n=================================== FAILURES ===================================\n_________________ test_calculate_total_price_with_mixed_types __________________\ntest_app.py:10: in test_calculate_total_price_with_mixed_types\n    assert calculate_total_price(prices) == 35.5\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\napp.py:7: in calculate_total_price\n    raise TypeError(f\"Non-numeric value found: {price}\")\nE   TypeError: Non-numeric value found: oops\n=========================== short test summary info ============================\nFAILED test_app.py::test_calculate_total_price_with_mixed_types - TypeError: ...\n========================= 1 failed, 3 passed in 0.04s =========================="
+    ]
+  },
+  {
+    "timestamp": "2026-04-12T14:17:51.160233",
+    "error_type": "TestFailure",
+    "error_message": "Application runs successfully, but tests are failing.",
+    "target_file": "app.py",
+    "attempt": 2,
+    "fix_summary": "Generated fix failed tests and backup was restored.",
+    "tests_passed": false,
+    "validation_issues": [
+      "============================= test session starts ==============================\ncollecting ... collected 4 items\n\ntest_app.py::test_calculate_total_price_with_valid_numbers PASSED        [ 25%]\ntest_app.py::test_calculate_total_price_with_mixed_types FAILED          [ 50%]\ntest_app.py::test_calculate_total_price_with_no_prices PASSED            [ 75%]\ntest_app.py::test_calculate_total_price_with_non_numeric PASSED          [100%]\n\n=================================== FAILURES ===================================\n_________________ test_calculate_total_price_with_mixed_types __________________\ntest_app.py:10: in test_calculate_total_price_with_mixed_types\n    assert calculate_total_price(prices) == 35.5\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\napp.py:8: in calculate_total_price\n    raise TypeError(f\"Non-numeric value found: {price}\")\nE   TypeError: Non-numeric value found: oops\n----------------------------- Captured stdout call -----------------------------\nNon-numeric value found: oops\n=========================== short test summary info ============================\nFAILED test_app.py::test_calculate_total_price_with_mixed_types - TypeError: ...\n========================= 1 failed, 3 passed in 0.04s =========================="
+    ]
+  },
+  {
+    "timestamp": "2026-04-12T14:17:53.512761",
+    "error_type": "TestFailure",
+    "error_message": "Application runs successfully, but tests are failing.",
+    "target_file": "app.py",
+    "attempt": 3,
+    "fix_summary": "Generated fix failed tests and backup was restored.",
+    "tests_passed": false,
+    "validation_issues": [
+      "============================= test session starts ==============================\ncollecting ... collected 4 items\n\ntest_app.py::test_calculate_total_price_with_valid_numbers PASSED        [ 25%]\ntest_app.py::test_calculate_total_price_with_mixed_types FAILED          [ 50%]\ntest_app.py::test_calculate_total_price_with_no_prices PASSED            [ 75%]\ntest_app.py::test_calculate_total_price_with_non_numeric PASSED          [100%]\n\n=================================== FAILURES ===================================\n_________________ test_calculate_total_price_with_mixed_types __________________\ntest_app.py:10: in test_calculate_total_price_with_mixed_types\n    assert calculate_total_price(prices) == 35.5\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\napp.py:7: in calculate_total_price\n    raise TypeError(f\"Non-numeric value found: {price}\")\nE   TypeError: Non-numeric value found: oops\n=========================== short test summary info ============================\nFAILED test_app.py::test_calculate_total_price_with_mixed_types - TypeError: ...\n========================= 1 failed, 3 passed in 0.04s =========================="
+    ]
+  },
+  {
+    "timestamp": "2026-04-12T14:26:31.444001",
+    "error_type": "TestFailure",
+    "error_message": "Application runs successfully, but tests are failing.",
+    "target_file": "app.py",
+    "attempt": 1,
+    "fix_summary": "Generated fix failed tests and backup was restored.",
+    "tests_passed": false,
+    "validation_issues": [
+      "============================= test session starts ==============================\ncollecting ... collected 4 items\n\ntest_app.py::test_calculate_total_price_with_valid_numbers PASSED        [ 25%]\ntest_app.py::test_calculate_total_price_with_mixed_types PASSED          [ 50%]\ntest_app.py::test_calculate_total_price_with_no_prices PASSED            [ 75%]\ntest_app.py::test_calculate_total_price_with_non_numeric FAILED          [100%]\n\n=================================== FAILURES ===================================\n_________________ test_calculate_total_price_with_non_numeric __________________\ntest_app.py:18: in test_calculate_total_price_with_non_numeric\n    with pytest.raises(TypeError):\nE   Failed: DID NOT RAISE <class 'TypeError'>\n----------------------------- Captured stdout call -----------------------------\nNon-numeric value found: not\nNon-numeric value found: a\nNon-numeric value found: number\n=========================== short test summary info ============================\nFAILED test_app.py::test_calculate_total_price_with_non_numeric - Failed: DID...\n========================= 1 failed, 3 passed in 0.05s =========================="
+    ]
+  },
+  {
+    "timestamp": "2026-04-12T14:26:33.556337",
+    "error_type": "TestFailure",
+    "error_message": "Application runs successfully, but tests are failing.",
+    "target_file": "app.py",
+    "attempt": 2,
+    "fix_summary": "Generated fix failed tests and backup was restored.",
+    "tests_passed": false,
+    "validation_issues": [
+      "============================= test session starts ==============================\ncollecting ... collected 4 items\n\ntest_app.py::test_calculate_total_price_with_valid_numbers PASSED        [ 25%]\ntest_app.py::test_calculate_total_price_with_mixed_types PASSED          [ 50%]\ntest_app.py::test_calculate_total_price_with_no_prices PASSED            [ 75%]\ntest_app.py::test_calculate_total_price_with_non_numeric FAILED          [100%]\n\n=================================== FAILURES ===================================\n_________________ test_calculate_total_price_with_non_numeric __________________\ntest_app.py:18: in test_calculate_total_price_with_non_numeric\n    with pytest.raises(TypeError):\nE   Failed: DID NOT RAISE <class 'TypeError'>\n----------------------------- Captured stdout call -----------------------------\nNon-numeric value found: not\nNon-numeric value found: a\nNon-numeric value found: number\n=========================== short test summary info ============================\nFAILED test_app.py::test_calculate_total_price_with_non_numeric - Failed: DID...\n========================= 1 failed, 3 passed in 0.04s =========================="
+    ]
+  },
+  {
+    "timestamp": "2026-04-12T14:26:35.940253",
+    "error_type": "TestFailure",
+    "error_message": "Application runs successfully, but tests are failing.",
+    "target_file": "app.py",
+    "attempt": 3,
+    "fix_summary": "Generated fix failed tests and backup was restored.",
+    "tests_passed": false,
+    "validation_issues": [
+      "============================= test session starts ==============================\ncollecting ... collected 4 items\n\ntest_app.py::test_calculate_total_price_with_valid_numbers PASSED        [ 25%]\ntest_app.py::test_calculate_total_price_with_mixed_types PASSED          [ 50%]\ntest_app.py::test_calculate_total_price_with_no_prices PASSED            [ 75%]\ntest_app.py::test_calculate_total_price_with_non_numeric FAILED          [100%]\n\n=================================== FAILURES ===================================\n_________________ test_calculate_total_price_with_non_numeric __________________\ntest_app.py:18: in test_calculate_total_price_with_non_numeric\n    with pytest.raises(TypeError):\nE   Failed: DID NOT RAISE <class 'TypeError'>\n----------------------------- Captured stdout call -----------------------------\nNon-numeric value found: not\nNon-numeric value found: a\nNon-numeric value found: number\n=========================== short test summary info ============================\nFAILED test_app.py::test_calculate_total_price_with_non_numeric - Failed: DID...\n========================= 1 failed, 3 passed in 0.04s =========================="
+    ]
+  }
+]

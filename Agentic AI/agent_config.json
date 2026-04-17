@@ -1,0 +1,6 @@
+{
+  "entry_file": "app.py",
+  "test_path": "test_app.py",
+  "rules_path": "rules.json",
+  "max_attempts": 3
+}

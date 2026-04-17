@@ -1,0 +1,12 @@
+{
+  "rules": [
+    "Always handle exceptions using try/except",
+    "Do not remove existing functionality unless necessary",
+    "Preserve function names and structure",
+    "Write clean and readable Python code",
+    "Avoid hardcoding values",
+    "Ensure compatibility with existing tests",
+    "Do not introduce new bugs",
+    "Prefer simple and minimal fixes over complex rewrites"
+  ]
+}
