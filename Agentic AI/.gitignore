@@ -1,0 +1,5 @@
+.env
+__pycache__/
+*.bak
+error_log.txt
+fix_memory.json
