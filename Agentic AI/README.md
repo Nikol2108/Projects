@@ -75,11 +75,16 @@ When your application crashes:
 - **Pattern matching** retrieves similar past failures to guide future fixes
 - **Audit trail** enables root cause analysis and team learning
 
-### 🎛️ Enterprise Dashboard
-- **Streamlit-based command center** with real-time fix monitoring
-- **Log streaming** shows agent decision-making process
-- **Manual override** allows human intervention at any step
-- **One-click execution** for rapid incident response
+### 🎛️ Dashboard
+* **Streamlit-based command center** with real-time fix monitoring
+* **Log streaming** shows agent decision-making process
+* **Manual override** allows human intervention at any step
+* **One-click execution** for rapid incident response
+* **Mentor Mode (Guardian Logic):** A specialized mode designed to prevent accidental changes and support junior developers. In this mode, the agent acts as a "Senior Reviewer" explaining its reasoning before any code is applied and requiring explicit human sign-off for critical symbols.
+
+Dashboard Overview: <img width="1699" height="837" alt="Dashboard_1" src="https://github.com/user-attachments/assets/bbceb66d-8b85-4c4a-8e66-066a39687ed9" />
+
+<img width="1629" height="912" alt="Dashboard_2" src="https://github.com/user-attachments/assets/d3323c4f-76a4-48e2-a7cc-3f0893d1beb0" />
 
 ---
 
@@ -121,22 +126,6 @@ The system is built on a modular, layered architecture designed for stability, s
 <img width="4000" height="300" width="1000" alt="Statistical Test Selection-2026-04-17-170623" src="https://github.com/user-attachments/assets/ff1d8351-75ee-46cb-9b11-cce21733ba89" />
 
 ---
-
-## Streamlit Dashboard
-The SentryAgent AI includes a high-level command center built with Streamlit, designed for real-time monitoring and manual intervention:
-
-* **Live Incident Monitoring:** View active crashes, tracebacks, and AI-generated fix candidates in a clean, professional UI.
-
-* **One-Click Repair:** Manually trigger the self-healing cycle or apply recommended fixes with a single button.
-
-* **Integrated Log Streaming:** Access the chronological history of system errors and agent decisions without leaving the dashboard.
-
-* **Mentor Mode (Guardian Logic):** A specialized mode designed to prevent accidental changes and support junior developers. In this mode, the agent acts as a "Senior Reviewer" explaining its reasoning before any code is applied and requiring explicit human sign-off for critical symbols.
-
-
-Dashboard Overview: <img width="1699" height="837" alt="Dashboard_1" src="https://github.com/user-attachments/assets/bbceb66d-8b85-4c4a-8e66-066a39687ed9" />
-
-<img width="1629" height="912" alt="Dashboard_2" src="https://github.com/user-attachments/assets/d3323c4f-76a4-48e2-a7cc-3f0893d1beb0" />
 
 ## Example Scenario
 
@@ -299,7 +288,7 @@ The agent is instructed to:
 
 ## Author
 
-Nikol
+Nikol Nutenko | 
 B.A. Information Systems Management
 Specialization: Data Analysis & AI Systems
 
